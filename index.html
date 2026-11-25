@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gazebo video demonstration of safe source seeking by a nonholonomic vehicle with a rotating sensor.">
+  <title>Nonholonomic Source Seeking With a Rotating Sensor — Video</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #17212e; background: #f7f8fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(100% - 40px, 1040px); margin: 0 auto; padding: 48px 0 36px; }
+    h1 { max-width: 920px; margin: 0; font-size: clamp(1.75rem, 3.7vw, 2.65rem); line-height: 1.18; letter-spacing: -.035em; font-weight: 650; text-wrap: balance; }
+    .subtitle { margin: 16px 0 28px; color: #526173; font-size: 1.125rem; line-height: 1.6; }
+    figure { margin: 0; }
+    video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; background: #101418; }
+    figcaption { max-width: 880px; margin-top: 24px; font-size: 1.0625rem; line-height: 1.7; }
+    figcaption p { margin: 0 0 10px; }
+    .note { color: #526173; font-size: .9375rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 22px; font-size: .9375rem; }
+    a { color: #1557a5; text-underline-offset: 4px; }
+    a:hover { color: #0b3971; }
+    a:focus-visible { outline: 3px solid #1557a5; outline-offset: 5px; border-radius: 2px; }
+    @media (max-width: 600px) { main { width: calc(100% - 32px); padding-top: 28px; } .subtitle { margin-bottom: 22px; } video { border-radius: 6px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Nonholonomic Source Seeking With a Rotating Sensor</h1>
+      <p class="subtitle">Safe scanning and unbiased convergence to the constrained optimizer.</p>
+    </header>
+    <figure>
+      <video controls playsinline preload="metadata" poster="poster.jpg" aria-label="Gazebo source-seeking demonstration">
+        <source src="gazebo_demo.mp4" type="video/mp4">
+        Your browser cannot play this video. <a href="gazebo_demo.mp4">Download the video</a> instead.
+      </video>
+      <figcaption>
+        <p>A separately recorded Gazebo run with the same initial conditions as S2 in the manuscript. The vehicle passes through a doorway while seeking an indoor source using lidar measurements.</p>
+        <p class="note">The 42-second video includes the simulation time and playback speed on screen.</p>
+      </figcaption>
+    </figure>
+    <nav aria-label="Video links">
+      <a href="gazebo_demo.mp4" download>Download video</a>
+      <a href="https://github.com/Xuebin-Li-hit/nonholonomic-source-seeking">GitHub repository</a>
+    </nav>
+  </main>
+</body>
+</html>
